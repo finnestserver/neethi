@@ -6,6 +6,7 @@ Description: Mediplus - Doctor HTML Template.
 Version:	1.1
 ========================================*/   
 /* Tablet Screen */
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 /* Header Sticky */
 .section{

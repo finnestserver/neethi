@@ -1,0 +1,27 @@
+name: Deploy to Hostinger
+
+on:
+  push:
+    branches:
+      - main    # Adjust to the branch you use (e.g., "main", "master")
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Git configuration
+        run: |
+          git config --global user.name "finnestserver"
+          git config --global user.email "finnestserver@gmail.com"
+      
+      - name: Deploy to Hostinger
+        run: |
+          git clone https://github.com/finnestserver/neethi.git  # Replace with your deployment folder path
+          cd /public_html
+          git pull https://github.com/finnestserver/neethi.git build  # Pull the latest changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}  # GitHub token for authentication
