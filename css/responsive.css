@@ -161,6 +161,9 @@ Version:	1.1
 }
 .slider .single-slider .text {
 	margin-top: 80px;
+	background: #ffffffbf;
+
+
 }
 .slider.index2 .single-slider .text{
 	margin-top:80px;
@@ -608,6 +611,7 @@ Version:	1.1
 	line-height: 35px;
 }
 .slider .single-slider .text {
+background: white;
 	margin-top: 40px;
 }
 .slider.index2 .single-slider .text {
@@ -1038,7 +1042,7 @@ Version:	1.1
 
 .slider .single-slider .text{
 	padding: 2rem;
-	background: white;
+background: white;	
 }
 .section{
 	padding:50px 0px;
